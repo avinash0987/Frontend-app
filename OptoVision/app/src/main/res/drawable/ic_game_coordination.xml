@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Two cartoon eyes for Eye Coordination -->
+    <!-- Left eye -->
+    <circle
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#10B981"
+        android:strokeWidth="2"
+        cx="7"
+        cy="12"
+        r="4"/>
+    <circle
+        android:fillColor="#1F2937"
+        cx="7"
+        cy="12"
+        r="2"/>
+    <!-- Right eye -->
+    <circle
+        android:fillColor="#FFFFFF"
+        android:strokeColor="#10B981"
+        android:strokeWidth="2"
+        cx="17"
+        cy="12"
+        r="4"/>
+    <circle
+        android:fillColor="#1F2937"
+        cx="17"
+        cy="12"
+        r="2"/>
+</vector>

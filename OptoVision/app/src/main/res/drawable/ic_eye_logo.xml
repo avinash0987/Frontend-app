@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="80dp"
+    android:height="80dp"
+    android:viewportWidth="80"
+    android:viewportHeight="80">
+    <!-- White circle background -->
+    <path
+        android:pathData="M40,40m-38,0a38,38 0,1 1,76 0a38,38 0,1 1,-76 0"
+        android:fillColor="#FFFFFF"/>
+    <!-- Eye outer shape -->
+    <path
+        android:pathData="M40,26C28,26 18,33 14,40C18,47 28,54 40,54C52,54 62,47 66,40C62,33 52,26 40,26Z"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000"
+        android:strokeColor="#2563EB"/>
+    <!-- Eye iris (outer circle) -->
+    <path
+        android:pathData="M40,40m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0"
+        android:strokeWidth="2.5"
+        android:fillColor="#00000000"
+        android:strokeColor="#2563EB"/>
+    <!-- Eye pupil (inner filled circle) -->
+    <path
+        android:pathData="M40,40m-5,0a5,5 0,1 1,10 0a5,5 0,1 1,-10 0"
+        android:fillColor="#2563EB"/>
+</vector>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_blue_background"
+    tools:context=".OtpVerificationActivity">
+
+    <!-- Top Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <!-- Back Button -->
+        <LinearLayout
+            android:id="@+id/backButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_arrow_back" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+
+        <!-- Eye Logo -->
+        <ImageView
+            android:id="@+id/ivEyeLogo"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_eye_logo"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter OTP"
+            android:textSize="26sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-medium"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We've sent a 6-digit code to your email"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:alpha="0.9"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- White Card Form - compact size, NOT extending to bottom -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="100dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white_card_all"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center_horizontal">
+
+        <!-- OTP Input Boxes -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/etOtp1"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/etOtp2"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/etOtp3"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/etOtp4"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/etOtp5"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold"
+                android:layout_marginEnd="6dp" />
+
+            <EditText
+                android:id="@+id/etOtp6"
+                android:layout_width="42dp"
+                android:layout_height="48dp"
+                android:background="@drawable/rounded_otp_box"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLength="1"
+                android:textSize="18sp"
+                android:textColor="#1F2937"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Verify Button -->
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="Verify"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:background="@drawable/rounded_button_gray"
+            android:layout_marginTop="20dp" />
+
+        <!-- Resend Link -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Didn't receive code?"
+                android:textSize="13sp"
+                android:textColor="#6B7280" />
+
+            <TextView
+                android:id="@+id/tvResend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Resend"
+                android:textSize="13sp"
+                android:textColor="#3B82F6"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

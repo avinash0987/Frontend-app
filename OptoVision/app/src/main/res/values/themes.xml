@@ -1,0 +1,59 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.OptoVision" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/black</item>
+        <item name="colorOnPrimaryContainer">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Force white dialogs globally -->
+        <item name="alertDialogTheme">@style/WhiteAlertDialog</item>
+        <item name="android:alertDialogTheme">@style/WhiteAlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/WhiteMaterialAlertDialog</item>
+    </style>
+
+    <style name="Theme.OptoVision" parent="Base.Theme.OptoVision" />
+
+    <!-- White AlertDialog Style -->
+    <style name="WhiteAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="android:background">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorPrimary">#3B82F6</item>
+        <item name="buttonBarPositiveButtonStyle">@style/WhiteDialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/WhiteDialogButton</item>
+    </style>
+
+    <style name="WhiteMaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">#000000</item>
+        <item name="colorOnSurfaceVariant">#000000</item>
+        <item name="colorPrimary">#3B82F6</item>
+    </style>
+
+    <style name="WhiteDialogButton" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">#3B82F6</item>
+    </style>
+
+    <!-- NoActionBar variant for fullscreen activities -->
+    <style name="Theme.OptoVision.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+    
+    <!-- Bottom Navigation Text Styles -->
+    <style name="BottomNavTextActive">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#3B82F6</item>
+    </style>
+    
+    <style name="BottomNavTextInactive">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#9CA3AF</item>
+    </style>
+</resources>

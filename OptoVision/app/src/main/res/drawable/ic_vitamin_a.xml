@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Carrot icon for Vitamin A -->
+    <path
+        android:fillColor="#F97316"
+        android:pathData="M16,5l-2,2L12.3,5.3c-0.4,-0.4 -1,-0.4 -1.4,0l-6.6,6.6c-0.4,0.4 -0.4,1 0,1.4l6.6,6.6c0.4,0.4 1,0.4 1.4,0l6.6,-6.6c0.4,-0.4 0.4,-1 0,-1.4L17.2,10.2L19,8.4V5H16z"/>
+    <path
+        android:fillColor="#22C55E"
+        android:pathData="M14,3c0.6,0 1,0.4 1,1v1h-2V4C13,3.4 13.4,3 14,3zM17,4c0.6,0 1,0.4 1,1v1h-2V5C16,4.4 16.4,4 17,4z"/>
+</vector>

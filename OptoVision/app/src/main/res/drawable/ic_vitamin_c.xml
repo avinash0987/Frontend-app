@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <!-- Citrus/Orange icon for Vitamin C -->
+    <circle
+        android:fillColor="#F97316"
+        cx="12"
+        cy="12"
+        r="9"/>
+    <path
+        android:fillColor="#FED7AA"
+        android:pathData="M12,5v14M5,12h14M7.5,7.5l9,9M16.5,7.5l-9,9"
+        android:strokeColor="#FED7AA"
+        android:strokeWidth="1"/>
+    <circle
+        android:fillColor="#FFFFFF"
+        cx="12"
+        cy="12"
+        r="2"/>
+</vector>

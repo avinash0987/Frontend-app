@@ -1,0 +1,41 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="64dp"
+    android:height="80dp"
+    android:viewportWidth="64"
+    android:viewportHeight="80">
+    
+    <!-- Brain outline -->
+    <path
+        android:pathData="M32,8 C22,8 14,16 14,26 C14,32 17,37 22,40 C22,44 20,48 18,50 C18,54 22,58 28,58 L36,58 C42,58 46,54 46,50 C44,48 42,44 42,40 C47,37 50,32 50,26 C50,16 42,8 32,8 Z"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"/>
+    
+    <!-- Brain inner details -->
+    <path
+        android:pathData="M32,16 L32,42"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"/>
+    
+    <path
+        android:pathData="M24,22 Q28,26 32,22 Q36,26 40,22"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"/>
+    
+    <path
+        android:pathData="M24,32 Q28,36 32,32 Q36,36 40,32"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"/>
+    
+    <!-- Pulse/heartbeat line below brain -->
+    <path
+        android:pathData="M12,68 L22,68 L26,60 L30,76 L34,64 L38,72 L42,68 L52,68"
+        android:strokeWidth="2"
+        android:strokeColor="#FFFFFF"
+        android:fillColor="#00000000"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"/>
+    
+</vector>

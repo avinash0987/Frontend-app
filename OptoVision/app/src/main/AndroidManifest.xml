@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Network permissions for Volley API calls -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.OptoVision"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".DistanceVisonTest"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".DistanceVisionQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".DistanceVisonTest" />
+        <activity
+            android:name=".DistanceVisionResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".NearVisionTestActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".NearVisionQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".NearVisionTestActivity" />
+        <activity
+            android:name=".NearVisionResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ColorVisionTestActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ColorVisionQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".ColorVisionTestActivity" />
+        <activity
+            android:name=".ColorVisionResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AstigmatismTestActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".AstigmatismQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".AstigmatismTestActivity" />
+        <activity
+            android:name=".AstigmatismResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ContrastTestActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ContrastQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".ContrastTestActivity" />
+        <activity
+            android:name=".ContrastResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VisualFieldTestActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VisualFieldQuestionActivity"
+            android:exported="false"
+            android:parentActivityName=".VisualFieldTestActivity" />
+        <activity
+            android:name=".VisualFieldResultActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".LoginActivity" />
+        <activity
+            android:name=".OtpVerificationActivity"
+            android:exported="false"
+            android:parentActivityName=".ForgotPasswordActivity" />
+        <activity
+            android:name=".AddProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".ProfileSelectionActivity" />
+        <activity
+            android:name=".AgeVisionActivity"
+            android:exported="false"
+            android:parentActivityName=".AddProfileActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileSelectionActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".OtpVerificationActivity" /> <!-- Dashboard is the main hub - use singleTask to resume properly from recent apps -->
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VitaminAFoodsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VitaminCFoodsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".VitaminEFoodsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".Omega3FoodsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".DailyDietTipsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".FocusTrackingGameActivity"
+            android:exported="false"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".ColorMatchGameActivity"
+            android:exported="false"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".MemoryVisionGameActivity"
+            android:exported="false"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".EyeCoordinationGameActivity"
+            android:exported="false"
+            android:parentActivityName=".GamesActivity" />
+        <activity
+            android:name=".EyeCareGuidelinesActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".EyeExercisesActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".GamesActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ReportActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".PreviousResultsActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".ReportGeneratingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.OptoVision.NoActionBar"
+            android:parentActivityName=".DashboardActivity" />
+        <activity
+            android:name=".CompleteGamesActivity"
+            android:exported="false"
+            android:parentActivityName=".DashboardActivity" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

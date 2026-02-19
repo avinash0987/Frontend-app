@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    <!-- Realistic eye icon for Vision Tests -->
+    <!-- Eye white (sclera) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M24,14C14,14 6,24 6,24s8,10 18,10 18,-10 18,-10 -8,-10 -18,-10z"/>
+    <!-- Iris (blue) -->
+    <circle
+        android:fillColor="#3B82F6"
+        cx="24"
+        cy="24"
+        r="8"/>
+    <!-- Pupil -->
+    <circle
+        android:fillColor="#1E293B"
+        cx="24"
+        cy="24"
+        r="3.5"/>
+    <!-- Light reflection -->
+    <circle
+        android:fillColor="#FFFFFF"
+        cx="26"
+        cy="22"
+        r="1.5"/>
+    <!-- Eye outline -->
+    <path
+        android:strokeColor="#9CA3AF"
+        android:strokeWidth="1.5"
+        android:fillColor="#00000000"
+        android:pathData="M24,14C14,14 6,24 6,24s8,10 18,10 18,-10 18,-10 -8,-10 -18,-10z"/>
+</vector>
