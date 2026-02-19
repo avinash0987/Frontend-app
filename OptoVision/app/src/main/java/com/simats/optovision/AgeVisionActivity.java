@@ -156,7 +156,7 @@ public class AgeVisionActivity extends AppCompatActivity {
             }
         });
     }
-
+// Show a picker for glasses/contact lenses options
     private void showGlassesPicker() {
         String[] options = { "Yes, Glasses", "Yes, Contact Lenses", "Both", "No" };
 
